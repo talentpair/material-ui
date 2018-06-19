@@ -59,7 +59,7 @@ class SelectInput extends React.Component {
 
   handleClick = event => {
     // Opening the menu is going to blur the. It will be focused back when closed.
-    this.ignoreNextBlur = true;
+    // this.ignoreNextBlur = true;
     this.update({
       open: true,
       event,
