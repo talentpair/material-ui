@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://material-ui.com/" rel="noopener" target="_blank"><img width="200" src="/static/brand.png" alt="Material-UI logo"></a></p>
+  <a href="https://material-ui-next.com/" rel="noopener" target="_blank"><img width="200" src="/static/brand.png" alt="Material-UI logo"></a></p>
 </p>
 
 <h1 align="center">Material-UI</h1>
@@ -8,8 +8,8 @@
 
 [React](http://facebook.github.io/react/) components that implement [Google's Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
-[![npm package](https://img.shields.io/npm/v/@material-ui/core/latest.svg)](https://www.npmjs.com/package/@material-ui/core)
-[![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)](https://www.npmjs.com/package/@material-ui/core)
+[![npm package](https://img.shields.io/npm/v/material-ui/next.svg)](https://www.npmjs.com/package/material-ui)
+[![npm download](https://img.shields.io/npm/dm/material-ui.svg)](https://www.npmjs.com/package/material-ui)
 [![CircleCI](https://img.shields.io/circleci/project/github/mui-org/material-ui/v1-beta.svg)](https://circleci.com/gh/mui-org/material-ui/tree/v1-beta)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-f81a65.svg)](https://gitter.im/callemall/material-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/v1-beta.svg)](https://codecov.io/gh/mui-org/material-ui/branch/v1-beta)
@@ -25,26 +25,18 @@
 
 ## Installation
 
-Material-UI is available as an [npm package](https://www.npmjs.com/package/@material-ui/core).
+Material-UI is available as an [npm package](https://www.npmjs.com/package/material-ui).
 
-**[Stable channel v1](https://material-ui.com/)**
+**[Stable channel (v0.x)](http://material-ui.com/)**
 ```sh
-// with npm
-npm install @material-ui/core
-
-// with yarn
-yarn add @material-ui/core
-```
-
-**[v0.x](https://v0.material-ui.com/)** ([Migration to v1](https://material-ui.com/guides/migration-v0x/))
-```sh
-// with npm
 npm install material-ui
-
-// with yarn
-yarn add material-ui
 ```
 
+**[Pre-release channel (v1-beta)](https://material-ui-next.com/)**
+([Recommended](#should-i-start-with-v1-beta) for new projects.)
+```sh
+npm install material-ui@next
+```
 
 Please note that `@next` will only point to pre-releases; to get the latest stable release use `@latest` instead.
 
@@ -109,14 +101,14 @@ Gold Sponsors are those who have pledged $500/month and more to Material-UI.
 <a href="https://opencollective.com/material-ui/tiers/gold-sponsors/8/website" rel="noopener" target="_blank"  style="margin-right: 8px;"><img src="https://opencollective.com/material-ui/tiers/gold-sponsors/8/avatar.svg" alt="8" /></a>
 <a href="https://opencollective.com/material-ui/tiers/gold-sponsors/9/website" rel="noopener" target="_blank"  style="margin-right: 8px;"><img src="https://opencollective.com/material-ui/tiers/gold-sponsors/9/avatar.svg" alt="9" /></a>
 
-## Usage
+## Usage (v1-beta)
 
 Here is a quick example to get you started, **it's all you need**:
 
 ```jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
+import { render } from 'react-dom';
+import Button from 'material-ui/Button';
 
 function App() {
   return (
@@ -126,12 +118,30 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+render(<App />, document.querySelector('#app'));
 ```
 
 Yes, it's really all you need to get started as you can see in this live and interactive demo:
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/4j7m47vlm4)
+
+## Should I start with v1-beta?
+We often get this question:
+
+> Should I start with v1-beta? Beta is beta, so it's not a final product and I'm not guaranteed anything.
+
+**Yes, you should.**
+
+Some users are starting projects with v0.x which given the quality and stability of v1 they shouldn't be. They are just creating extra work for themselves as they will have to transition at some point.
+
+The v1-beta effort started in May 2016, and it resolves many of the issues with v0. Many of us are already using v1-beta in production with no problems, and resolving the occasional breaking change is less hassle than upgrading from v0.x to v1 would be.
+
+Material-UI will never be a final product, you will never be guaranteed anything whether with v0.x, v1, or any future release.
+We are keeping v1 in beta so we can release breaking changes without having them slow us down.
+
+[The release notes](https://github.com/mui-org/material-ui/releases) always describe the breaking changes introduced with each release.
+
+**Bite the bullet and go for v1-beta.**
 
 ## Questions
 
@@ -142,11 +152,11 @@ There is a StackOverflow tag called "material-ui" that you can use to tag your q
 ## Examples
 
 Are you looking for an example project to get started?
-[We host some](https://material-ui.com/getting-started/example-projects/).
+[We host some](https://material-ui-next.com/getting-started/example-projects/).
 
 ## Documentation
 
-Check out our [documentation website](https://material-ui.com/).
+Check out our [documentation website](https://material-ui-next.com/).
 
 ## Contributing
 
@@ -159,7 +169,7 @@ Please read the [changelog](https://github.com/mui-org/material-ui/releases).
 
 ## Roadmap
 
-The future plans and high priority features and enhancements can be found in the [ROADMAP.md](https://material-ui.com/discover-more/roadmap/) file.
+The future plans and high priority features and enhancements can be found in the [ROADMAP.md](https://material-ui-next.com/discover-more/roadmap/) file.
 
 ## Thanks
 
